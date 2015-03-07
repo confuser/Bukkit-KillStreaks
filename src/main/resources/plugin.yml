@@ -14,7 +14,7 @@ permissions:
   killstreaks.enabled:
     description: 'Allows player to have killstreaks'
     default: op
-  killstreak.announcements:
+  killstreaks.announcements:
     description: 'Shows announcements'
     default: op
   killstreaks.command.reload:

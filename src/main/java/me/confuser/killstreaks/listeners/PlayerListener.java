@@ -61,7 +61,7 @@ public class PlayerListener extends Listeners<KillStreaks>{
 		
 		if (!killStreak.getAnnouncement().isEmpty()) {
 			String announcement = handleVariables(killStreak.getAnnouncement(), killer, victim);
-			plugin.getServer().broadcast(announcement, "killstreak.announcements");
+			plugin.getServer().broadcast(announcement, "killstreaks.announcements");
 		}
 		
 		for (String command : killStreak.getCommands()) {
