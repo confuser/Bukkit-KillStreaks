@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.confuser</groupId>
 	<artifactId>KillStreaks</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>KillStreaks</name>
 	<description>A Bukkit plugin allowing custom messages and commands on kill streaks</description>
 	<build>
