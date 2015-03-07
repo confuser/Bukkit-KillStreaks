@@ -1,0 +1,24 @@
+# Command and announcement variables:
+# [name]
+# [uuid]
+# [displayName]
+# [world]
+# [victimName]
+# [victimUuid]
+# [victimDisplayName]
+# Command example:
+# - money give [name] 1000
+# Streaks - Executed once a player reaches the X kill, e.g. on the 5th kill
+# Levels - Executed every Xth kill, e.g. every 3 kills
+streaks:
+  '5':
+    enabled: false
+    announcement: "[displayName] &cis on a roll!"
+    commands:
+
+# Executed every Xth kill
+levels:
+  '3':
+    enabled: false
+    announcement: "[displayName] &cis non-stop killing!"
+    commands:

@@ -1,0 +1,22 @@
+main: me.confuser.killstreaks.KillStreaks
+name: KillStreaks
+version: ${project.version}
+authors: [ confuser ]
+website: http://www.frostcast.net
+
+commands:
+  ksreload:
+    description: "Reloads KillStreak configs"
+    usage: "/ksreload"
+    permission: killstreaks.command.reload
+
+permissions:
+  killstreaks.enabled:
+    description: 'Allows player to have killstreaks'
+    default: op
+  killstreak.announcements:
+    description: 'Shows announcements'
+    default: op
+  killstreaks.command.reload:
+    description: 'Allows reload of KillStreaks plugin'
+    default: op
