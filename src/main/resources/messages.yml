@@ -1,2 +1,4 @@
 messages:
   configReloaded: '&aKillStreaks config reloaded successfully'
+  playerNotFound: '&cPlayer not found'
+  playerReset: '&aKillStreaks for player reset successfully'

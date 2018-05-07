@@ -6,9 +6,13 @@ website: http://www.frostcast.net
 
 commands:
   ksreload:
-    description: "Reloads KillStreak configs"
-    usage: "/ksreload"
+    description: 'Reloads KillStreak configs'
+    usage: '/ksreload'
     permission: killstreaks.command.reload
+  ksreset:
+    description: 'Resets a player''s kill streak'
+    usage: '/ksreset <player>'
+    permission: killstreaks.command.reset
 
 permissions:
   killstreaks.enabled:
@@ -19,4 +23,7 @@ permissions:
     default: op
   killstreaks.command.reload:
     description: 'Allows reload of KillStreaks plugin'
+    default: op
+  killstreaks.command.reset:
+    description: 'Allows resetting a player''s kill streak'
     default: op
