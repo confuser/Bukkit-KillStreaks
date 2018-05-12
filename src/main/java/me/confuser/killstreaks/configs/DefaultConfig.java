@@ -10,6 +10,8 @@ public class DefaultConfig extends Config<KillStreaks> {
   private LevelsConfig levelsConfig;
   @Getter
   private StreaksConfig streaksConfig;
+  @Getter
+  private KillAbuseConfig killAbuseConfig;
 
   public DefaultConfig() {
     super("config.yml");
@@ -19,6 +21,7 @@ public class DefaultConfig extends Config<KillStreaks> {
   public void afterLoad() {
     levelsConfig = new LevelsConfig(conf.getConfigurationSection("levels"));
     streaksConfig = new StreaksConfig(conf.getConfigurationSection("streaks"));
+    killAbuseConfig = new KillAbuseConfig(conf.getConfigurationSection("killAbuse"));
   }
 
   @Override

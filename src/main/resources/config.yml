@@ -22,3 +22,14 @@ levels:
     enabled: false
     announcement: "[displayName] &cis non-stop killing!"
     commands:
+
+# If enabled, prevents players from killing the same player over and over again
+# to increase number of kills and earn kill streaks
+# Reset on logout
+# E.g. below only counts killing the same player every minute
+killAbuse:
+  enabled: false
+  # Maximum kills per duration per player
+  maxKills: 1
+  # time in seconds that a player killing another player they have already killed does not count towards a kill streak
+  duration: 60
