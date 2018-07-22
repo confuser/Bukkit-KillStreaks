@@ -44,6 +44,7 @@ public class PlayerListener extends Listeners<KillStreaks> {
 
     Player killer = event.getEntity().getKiller();
 
+    if (killer.getUniqueId().equals(player.getUniqueId())) return;
     if (!killer.hasPermission("killstreaks.enabled")) return;
 
     KillStreakPlayer ksKiller = playerStorage.get(killer);
