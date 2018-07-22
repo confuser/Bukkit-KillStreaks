@@ -63,7 +63,7 @@ public class PlayerListener extends Listeners<KillStreaks> {
       boolean withinLimit = System.currentTimeMillis() - victim.getLastKilledAt() >= plugin.getConfiguration()
                                                                                            .getKillAbuseConfig()
                                                                                            .getDuration();
-      if (withinLimit || victim.getDeaths().intValue() != plugin.getConfiguration().getKillAbuseConfig().getMaxKills()) {
+      if (withinLimit && victim.getDeaths().intValue() != plugin.getConfiguration().getKillAbuseConfig().getMaxKills()) {
         victim.getDeaths().increment();
         victim.setLastKilledAt(System.currentTimeMillis());
         ksKiller.getKills().increment();
